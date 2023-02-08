@@ -45,5 +45,5 @@ jobs:
       - name: Deploy on Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: node-app
+          app-name: gh-nodeapp
           publish-profile: ${{ secrets.WEBAPPPUBLISHPROFILE }}
