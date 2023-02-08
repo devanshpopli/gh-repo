@@ -42,3 +42,8 @@ jobs:
           name: artifacts
       - name: Output contents
         run: ls
+      - name: Deploy on Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: node-app
+          publish-profile: ${{ secrets.WEBAPPPUBLISHPROFILE }}
